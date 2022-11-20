@@ -25,6 +25,6 @@ services:
       - ./agent-container/data:/etc/cp/data
       - ./agent-container/conf:/etc/cp/conf
       - ./agent-container/logs:/var/log/nano_agent
-    image: checkpoint/infinity-next-nano-agent:305214
+    image: checkpoint/infinity-next-nano-agent
     command: ["/cp-nano-agent", "--token", "$TOKEN"]
 
